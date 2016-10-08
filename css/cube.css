@@ -12,7 +12,7 @@
     margin: 0 auto ;   
     transform-style: preserve-3d;   
     transition: 1s; 
-    transform: rotateY(deg)
+    transform:;
     
 }
 .face{

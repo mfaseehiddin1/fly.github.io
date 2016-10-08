@@ -33,3 +33,14 @@ ul{
     font-size: 32px;
     float: right;
 }
+
+
+
+
+
+.faceoptions{
+    height: 90px;width: 90px;
+    backface-visibility: hidden;
+    background-color: aliceblue;
+    position: absolute;
+}
