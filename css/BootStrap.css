@@ -43,4 +43,32 @@ ul{
     backface-visibility: hidden;
     background-color: aliceblue;
     position: absolute;
+    text-align: center;
+    text-decoration-color: black;
+    transform: rotateY(180deg) translateZ(-10px);
+    transition: .2s;
 }
+#two:hover > .faceoptions{
+    transform: rotateY(0deg);
+}
+#FOone{
+    margin-top: -250px;
+    margin-left: 8px;
+}
+#FOtwo{
+    margin-top: -250px;
+    margin-left: 108px;
+}
+#FOthree{
+    margin-top: -250px;
+    margin-left: 210px;
+}
+#FOfour{
+    margin-top: -150px;
+    margin-left: 8px;
+}
+#FOfive{
+    margin-top: -150px;
+    margin-left: 108px;
+}
+#FOsix{}
