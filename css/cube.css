@@ -1,0 +1,72 @@
+/*classes*/
+#wrapper{
+       perspective: 1000px;
+    transform: translateY(50%
+    );
+    transition: 1s
+        
+}
+#cube{
+ 
+    height:350px;width: 350px;
+    margin: 0 auto ;   
+    transform-style: preserve-3d;   
+    transition: 1s; 
+    transform: rotateY(deg)
+    
+}
+.face{
+    height: 350px;width: 350px;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    opacity: .
+    border-radius: 6px;
+}
+.face h1{
+    margin-top: 200px;
+    text-align: center;
+    color: black;
+}
+body{
+    
+    background-color: #2B2B2B;
+}
+/*classes*/
+/*CubeFaceImaging*/
+#one{
+    background-color: #F6F6F6;
+     color: aqua;
+    transform-origin:center;
+    transform:translateZ(150px);
+    
+}
+#two{
+    background-color: #ff751a;    
+    transform-origin: top;
+    transform:rotateX(90deg) translateY(-200px);
+}
+#three{
+    background-color: #ff3333;
+    transform-origin: bottom;
+    transform:rotateX(-90deg) translateY(200px);
+}
+#four{
+
+    background-color: #E9E581;
+    transform-origin: center;
+    transform:translateZ(-200px) rotateY(180deg);
+}
+#five{
+    
+    background-color: #79d279;
+    transform-origin: right;
+    transform: rotateY(90deg) translateX(200px);
+}
+#six{
+    
+    background-color: #00b8e6;
+     transform-origin: left;
+    transform: rotateY(-90deg) translateX(-200px);
+}
+

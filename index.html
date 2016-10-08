@@ -1,23 +1,37 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="css/cube.css"/>
+        <link type="text/css" rel="stylesheet" href="css/BootStrap.css"/>
+        <script type="text/javascript" src="js/cube.js"></script>
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+                <li onclick="one()">Introduction</li>
+                <li onclick="two">Projects</li>
+                <li onclick="three()">Untitled</li>
+                <li onclick="four()">Untitled</li>
+                
+                <li onclick="five()">Untitled</li>
+                <li onclick="six()">Untitled</li>
+                
+            </ul>
+            <li id="NAME">MFaseehuddin.github.io</li>
+        </div>
+        <div id="wrapper"><div id="cube">
+            <div class="face" id="one">
+                <h1>
+                    MFaseehuddin 
+                    <br/>
+                    GitHub                 
+                </h1>
+            </div>
+            <div class="face" id="two"></div>
+            <div class="face" id="three"></div>
+            <div class="face" id="four"></div>
+            <div class="face" id="five"></div>
+            <div class="face" id="six"></div>
+        </div></div>
+    </body>
+</html>
