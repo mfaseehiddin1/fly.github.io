@@ -8,7 +8,7 @@
     background-color: #262626;
     font-family:monospace;
     font-size:15px;
-    z-index: 1231231;
+    
     list-style-type: none;
 } 
 ul{
@@ -39,17 +39,24 @@ ul{
 
 
 .faceoptions{
-    height: 90px;width: 90px;
+    height: 110px;width: 110px;
     backface-visibility: hidden;
-    background-color: aliceblue;
+    background-color: cadetblue;
     position: absolute;
     text-align: center;
     text-decoration-color: black;
-    transform: rotateY(180deg) translateZ(-10px);
-    transition: .2s;
+    border-radius: 10px;
+    transform: translateZ(1000px);
+    transition: 1s;
+    opacity: .0;
+    
+}
+#cube:hover > .face{
+    opacity: .9;
 }
 #two:hover > .faceoptions{
     transform: rotateY(0deg);
+    opacity: .9;
 }
 #FOone{
     margin-top: -250px;
@@ -57,18 +64,45 @@ ul{
 }
 #FOtwo{
     margin-top: -250px;
-    margin-left: 108px;
+    margin-left: 120px;
 }
 #FOthree{
     margin-top: -250px;
-    margin-left: 210px;
+    margin-left: 232px;
 }
 #FOfour{
-    margin-top: -150px;
+    margin-top: -138px;
     margin-left: 8px;
 }
 #FOfive{
-    margin-top: -150px;
-    margin-left: 108px;
+    margin-top: -138px;
+    margin-left: 120px;
 }
-#FOsix{}
+#FOsix{
+    margin-top: -138px;
+    margin-left: 232px;
+}
+#FOseven{
+    margin-top: -26px;
+    margin-left: 8px;
+}
+#FOeight{
+    margin-top: -26px;
+    margin-left: 120px;
+}
+#FOnine{
+    margin-top: -26px;
+    margin-left: 232px;
+}
+
+
+
+/*load anim*/
+@keyframes spin{
+    0% {transform: rotateX(0deg) rotateY(0deg)rotateZ(0deg)}
+    100% {transform: rotateX(360deg) rotateY(360deg)rotateZ(360deg)}
+}
+#cube{
+    animation: spin linear;
+    animation-duration: 2s;
+}

@@ -1,5 +1,7 @@
-function one() {
-    document.getElementById("cube").style.transform = 'rotateY(0deg)'
+function one(spining) {
+
+ document.getElementById("cube").style.transform = 'rotateY(0deg)'
+   
 }
 function two() {
     document.getElementById("cube").style.transform = "rotateX(-90deg)";
