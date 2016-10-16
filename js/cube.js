@@ -5,6 +5,8 @@ function one(spining) {
 }
 function two() {
     document.getElementById("cube").style.transform = "rotateX(-90deg)";
+    document.getElementsByClass("faceoptions").style.transform = "rotateY(0deg)";
+    document.getElementsByClass("faceoptions").style.opacity = "0.5";
 }
 
 function three() {
