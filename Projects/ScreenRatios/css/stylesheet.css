@@ -1,7 +1,10 @@
 .ratios{
     display: inline-block;
     padding: 10px;
-    background-color: aqua
+    background-color: aqua;
+}
+.ratios:hover{
+    background-color: pink;
 }
 #size{
     border-radius: 4px;
