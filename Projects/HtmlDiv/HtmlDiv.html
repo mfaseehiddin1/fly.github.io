@@ -6,7 +6,8 @@
 </head>
 <div>
 	<body>
-		<video id="feed"></video>
+		<video id="feed" style="-webkit-transform: scaleX(-1);
+    transform: scaleX(-1);"></video>
 		<h1 id="content">nothing</h1>
 			<script type="text/javascript">
 				  let scanner = new Instascan.Scanner({ video: document.getElementById('feed') });
@@ -15,8 +16,10 @@
 					document.getElementById('content').innerHTML = content;
 				  });
 				  Instascan.Camera.getCameras().then(function (cameras) {
-					if (cameras.length > 0) {
+					if (cameras.length > 1	) {
 					  scanner.start(cameras[1]);
+					} else if (cameras.length > 0){
+					  scanner.start(cameras[0]);
 					} else {
 					  console.error('No cameras found.');
 					}
